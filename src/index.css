@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root{
+  --bg: #FBF2E7;      
+  --panel: #FFFFFF;   
+  --ink: #1F2937;        
+  --muted: #6B7280;      
+  --red: #E11D48;      
+  --red-dark: #BE123C;   
+  --stroke: rgba(17, 24, 39, 0.08);
+}
+
+
+body{
+  background: var(--bg);
+  color: var(--ink);
+}
+
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.fade-up { animation: fadeUp 500ms ease-out both; }
+
+
+.lift {
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+.lift:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px rgba(17,24,39,0.10);
+  border-color: rgba(17,24,39,0.16);
+}
+
+
+.btn-primary {
+  transition: transform 160ms ease, background-color 160ms ease, box-shadow 160ms ease;
+}
+.btn-primary:hover{
+  transform: translateY(-1px);
+  box-shadow: 0 14px 26px rgba(225,29,72,0.22);
+}
