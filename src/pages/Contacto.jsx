@@ -105,6 +105,16 @@ export default function Contacto() {
           className="w-full rounded-lg border px-4 py-3"
         />
 
+            <input
+          type="tel"
+          name="telefono"
+          placeholder="telefono"
+          value={form.telefono}
+          onChange={onChange}
+          required
+          className="w-full rounded-lg border px-4 py-3"
+        />
+
         <textarea
           name="message"
           placeholder="Mensaje"
